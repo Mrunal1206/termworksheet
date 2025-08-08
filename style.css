@@ -1,0 +1,100 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #f2f2f2;
+  color: #141111;
+}
+
+/* Section containers */
+#welcome, #main {
+  display: none;
+  text-align: center;
+  margin-top: 100px;
+}
+#welcome.active, #main.active {
+  display: block;
+}
+
+ //Welcome Page 
+#welcome h1 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+#welcome button {
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+// Experiment selector 
+#experimentSelector {
+  padding: 8px;
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+// Table container
+#tablesContainer {
+  overflow-x: auto;
+  margin-top: 20px;
+  text-align: center;
+}
+
+ Table styling 
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 90%;
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+table th {
+  background-color: #f0f0f0;
+}
+table input {
+  width: 60px;
+  padding: 5px;
+  text-align: center;
+}
+
+//buttons
+#actionButtons {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+#actionButtons button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+#actionButtons button:hover {
+  background-color: #0b7dda;
+}
+
+//warning through js
+input:invalid {
+  border-color: red;
+  background-color: #ffe6e6;
+}
+
+
+@media (max-width: 600px) {
+  table, table th, table td {
+    font-size: 0.8em;
+  }
+  table input {
+    width: 45px;
+  }
+}
